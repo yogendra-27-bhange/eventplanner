@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 258 100% 97%; /* Light Lavender */
+    --foreground: 270 25% 25%; /* Dark Purple/Grey */
+
+    --muted: 258 60% 90%;
+    --muted-foreground: 270 25% 45%;
+
+    --popover: 258 100% 97%;
+    --popover-foreground: 270 25% 25%;
+
+    --card: 258 100% 99%; /* Slightly off-white for cards */
+    --card-foreground: 270 25% 25%;
+
+    --border: 270 20% 80%;
+    --input: 270 20% 85%;
+
+    --primary: 270 60% 70%; /* Soft Purple */
+    --primary-foreground: 270 100% 10%; /* Dark Purple for text on primary */
+
+    --secondary: 320 30% 85%; /* Lighter Muted Rose */
+    --secondary-foreground: 320 100% 10%;
+
+    --accent: 320 40% 77%; /* Muted Rose */
+    --accent-foreground: 320 100% 10%; /* Dark for text on accent */
+
+    --destructive: 0 72% 51%; /* Default destructive */
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 270 60% 70%; /* Soft Purple for focus rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 270 60% 70%;
+    --chart-2: 320 40% 77%;
+    --chart-3: 210 60% 70%;
+    --chart-4: 150 50% 65%;
+    --chart-5: 30 70% 70%;
+
+    --sidebar-background: 258 80% 95%;
+    --sidebar-foreground: 270 25% 25%;
+    --sidebar-primary: 270 60% 70%;
+    --sidebar-primary-foreground: 270 100% 10%;
+    --sidebar-accent: 320 40% 77%;
+    --sidebar-accent-foreground: 320 100% 10%;
+    --sidebar-border: 270 20% 80%;
+    --sidebar-ring: 270 60% 70%;
+  }
+
+  .dark {
+    /* Keeping dark mode relatively standard but aligned with purple tones */
+    --background: 270 15% 10%; 
+    --foreground: 258 100% 97%;
+
+    --muted: 270 15% 20%;
+    --muted-foreground: 258 60% 80%;
+
+    --popover: 270 15% 10%;
+    --popover-foreground: 258 100% 97%;
+
+    --card: 270 15% 12%;
+    --card-foreground: 258 100% 97%;
+
+    --border: 270 15% 30%;
+    --input: 270 15% 30%;
+
+    --primary: 270 60% 70%;
+    --primary-foreground: 270 100% 10%;
+
+    --secondary: 320 40% 60%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 320 40% 77%;
+    --accent-foreground: 320 100% 10%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 270 60% 70%;
+
+    --chart-1: 270 60% 70%;
+    --chart-2: 320 40% 77%;
+    --chart-3: 210 60% 70%;
+    --chart-4: 150 50% 65%;
+    --chart-5: 30 70% 70%;
+
+    --sidebar-background: 270 15% 12%;
+    --sidebar-foreground: 258 80% 95%;
+    --sidebar-primary: 270 60% 70%;
+    --sidebar-primary-foreground: 270 100% 10%;
+    --sidebar-accent: 320 40% 77%;
+    --sidebar-accent-foreground: 320 100% 10%;
+    --sidebar-border: 270 15% 30%;
+    --sidebar-ring: 270 60% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
