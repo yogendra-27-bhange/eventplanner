@@ -9,6 +9,9 @@ import { Navbar } from '@/components/layout/Navbar';
 export const metadata: Metadata = {
   title: 'Event Planner MVP',
   description: 'Manage and discover local events.',
+  icons: {
+    icon: '/final.png',
+  },
 };
 
 export default function RootLayout({
