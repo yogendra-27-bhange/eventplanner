@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { EventForm, type EventFormInputs } from '@/components/EventForm';
 import { useEvents } from '@/contexts/EventContext';
 import { useAuth } from '@/contexts/AuthContext';
